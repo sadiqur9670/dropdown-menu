@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+
+}
+.menu{
+	background-color: #282923;
+	height: 50px;
+}
+.menu ul{
+	display: flex;
+	margin: 0;
+
+}
+.menu ul li{
+	list-style: none;
+
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+
+}
+.menu .home1{
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+
+}
+.menu .home1:after{
+	content: "\f0d7";
+    font-family: "Font Awesome 5 pro";
+    position: absolute;
+    color: white;
+    width: 10px;
+    top: 25%;
+    left: 94%;
+    transition: .5s;
+    transform: rotate(180deg);
+
+}
+.menu .home1 .home1-content a{
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.menu .home1 .home1-content{
+	visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: -1;
+    top:-500%;
+    left: 0;
+    transition:0.5s ease;
+}
+.menu .home1 .home1-content a:hover{
+	background-color: rgba(0,0,0,0.08);
+}
+.menu .home1:hover .home1-content{
+	visibility: visible;
+	top:100%;
+}
+.home1 a:hover{
+	color: #0078D7;
+}
+.menu .home1:hover:after{
+	transform: rotate(0deg);
+	color: #0078D7;
+}
